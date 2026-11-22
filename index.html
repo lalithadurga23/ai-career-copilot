@@ -504,6 +504,7 @@ async function analyzeResume() {
         contents: [{ parts: [{ text: SYSTEM_PROMPT + "\n\n" + userPrompt }] }],
         generationConfig: {
           temperature: 0.3,
+           responseMimeType: "application/json",
           maxOutputTokens: 2048
         }
       })
